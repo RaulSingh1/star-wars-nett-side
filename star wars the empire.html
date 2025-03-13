@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Film</title>
+    <link rel="stylesheet" href="film.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <section class="film-section">
+        <h1>Star Wars: The Empire Strikes Back</h1>
+        <img src="empire.jpg" alt="Star Wars: The Empire Strikes Back">
+        <p class="description">Rebellenes kamp fortsetter mens Darth Vader jakter på Luke Skywalker og hans allierte.</p>
+        <span class="price">149 NOK</span>
+        <button class="buy-btn" onclick="showWatchButton()">Kjøp filmen</button>
+        <a href="https://ww4.fmovies.co/film/star-wars-episode-v-the-empire-strikes-back-2233/" class="watch-btn" id="watch-btn">Se filmen</a>
+    </section>
+    <a class="filmasfarge" href="film.html"> Tilbake</a>
+
+
+    <script>
+        function showWatchButton() {
+            document.getElementById("watch-btn").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>

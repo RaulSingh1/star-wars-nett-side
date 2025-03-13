@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars The Force Unleashed II</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body class="game-page">
+    <header>
+        <h1>Star Wars The Force Unleashed II</h1>
+        <a href="spill.html" class="back-btn">← Tilbake til butikken</a>
+    </header>
+
+    <main class="product-container">
+        <div class="image-slider">
+            <button class="slider-btn prev">❮</button>
+            <img src="logokr22.jpeg" class="active" alt="Bilde 1">
+            <img src="kr44.avif" alt="Bilde 2">
+            <img src="ke24.jpg" alt="Bilde 3">
+            <img src="ks22.webp" alt="Bilde 4">
+
+            <button class="slider-btn next">❯</button>
+        </div>
+
+        <div class="product-details">
+            <h2>Star Wars The Force Unleashed II</h2>
+            <p class="price">Pris: <span>249 NOK</span></p>
+            <p class="description">
+                I dette episke Star Wars-spillet spiller du som Starkiller, Darth Vaders hemmelige lærling.
+                Opplev intense kamper, bruk kraften og bekjemp ikoniske fiender!
+            </p>
+           <a href="betale.html"><button class="buy-btn">Fullfør kjøp</button></a> 
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Star Wars Store. Alle rettigheter forbeholdt.</p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.image-slider img');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        function showImage(i) {
+            images.forEach(img => img.classList.remove('active'));
+            images[i].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : images.length - 1;
+            showImage(index);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            index = (index < images.length - 1) ? index + 1 : 0;
+            showImage(index);
+        });
+
+        showImage(index);
+    </script>
+</body>
+</html>

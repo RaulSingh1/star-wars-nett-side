@@ -1,0 +1,70 @@
+body {
+    background: url('return\ jedi.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.leie-section {
+    padding: 50px;
+}
+
+.leie-section h1 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.leie-section img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.7);
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.price {
+    display: block;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin: 15px 0;
+}
+
+.rent-btn, .watch-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rent-btn:hover, .watch-btn:hover {
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+.watch-btn {
+    display: none;
+}
+
+.rental-info {
+    font-size: 1rem;
+    color: #FFD700;
+    margin-top: 15px;
+}
+
+.filmasfarge{
+color: gold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kjøp Star Wars: Revenge of the Sith</title>
+    <link rel="stylesheet" href="revenge-buy.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <section class="film-section">
+        <h1>Star Wars: Episode III - Revenge of the Sith</h1>
+        <img src="revenge.jpg" alt="Star Wars: Revenge of the Sith">
+        <p class="description">Den galaktiske republikken kollapser mens Anakin Skywalker blir Darth Vader og den mørke siden reiser seg.</p>
+        <span class="price">149 NOK</span>
+        <button class="buy-btn" onclick="showWatchButton()">Kjøp filmen</button>
+        <a href="https://ww4.fmovies.co/film/star-wars-episode-iii-revenge-of-the-sith" class="watch-btn" id="watch-btn">Se filmen</a>
+    </section>
+    
+    <a class="filmasfarge" href="film.html">Tilbake</a>
+
+    <script>
+        function showWatchButton() {
+            document.getElementById("watch-btn").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Star Sars The Clone Wars</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body class="game-page">
+    <header>
+        <h1>Lego Star Sars The Clone Wars</h1>
+        <a href="spill.html" class="back-btn">← Tilbake til butikken</a>
+    </header>
+
+    <main class="product-container">
+        <div class="image-slider">
+            <button class="slider-btn prev">❮</button>
+            <img src="logopr1.jpg" class="active" alt="Bilde 1">
+            <img src="sklogo1.jpg" alt="Bilde 2">
+            <img src="sk2.jpg" alt="Bilde 3">
+            <img src="sk3.jpg" alt="Bilde 4">
+
+
+            <button class="slider-btn next">❯</button>
+        </div>
+
+        <div class="product-details">
+            <h2>Lego Star Wars The Clone Wars</h2>
+            <p class="price">Pris: <span> 449 NOK</span></p>
+            <p class="description">
+                Forestill deg star wars the clones wars i lego har du noen gang hat den tanken vel nå har vi det! kjøp spillet nå. the force venter på deg i lego verden.
+            <a href="betale.html"><button class="buy-btn">Fullfør kjøp</button></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Star Wars Store. Alle rettigheter forbeholdt.</p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.image-slider img');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        function showImage(i) {
+            images.forEach(img => img.classList.remove('active'));
+            images[i].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : images.length - 1;
+            showImage(index);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            index = (index < images.length - 1) ? index + 1 : 0;
+            showImage(index);
+        });
+
+        showImage(index);
+    </script>
+</body>
+</html>

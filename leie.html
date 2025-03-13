@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei Star Wars Film</title>
+    <link rel="stylesheet" href="leie.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <section class="leie-section">
+        <h1>Lei: Star Wars: The Empire Strikes Back</h1>
+        <img src="empire.jpg" alt="Star Wars: The Empire Strikes Back">
+        <p class="description">Rebellenes kamp fortsetter mens Darth Vader jakter på Luke Skywalker og hans allierte.</p>
+        <span class="price">49 NOK (2 dagers leie)</span>
+        <button class="rent-btn" onclick="startRental()">Lei filmen</button>
+        <a href="https://ww4.fmovies.co/film/star-wars-episode-v-the-empire-strikes-back-2233/" class="watch-btn" id="watch-btn">Se filmen</a>
+        <p id="rental-info" class="rental-info"></p>
+    </section>
+    <a class="filmasfarge" href="film.html"> Tilbake</a>
+
+    <script>
+        function startRental() {
+            document.getElementById("watch-btn").style.display = "inline-block";
+            let expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + 2);
+            document.getElementById("rental-info").innerText = "Tilgang utløper: " + expirationDate.toLocaleString();
+        }
+    </script>
+
+</body>
+</html>

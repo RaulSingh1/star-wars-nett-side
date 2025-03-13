@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Film</title>
+    <link rel="stylesheet" href="film2.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <section class="film-section">
+        <h1>Star Wars: Episode II - Attack of the Clones</h1>
+        <img src="ep2.jpg" alt="Star Wars: Attack of the Clones">
+        <p class="description">Galaksen trues av en klonekrig, og Anakin Skywalker blir stadig dratt mot mørket.</p>
+        <span class="price">149 NOK</span>
+        <button class="buy-btn" onclick="showWatchButton()">Kjøp filmen</button>
+        <a href="https://ww4.fmovies.co/film/star-wars-episode-ii-attack-of-the-clones-2234/" class="watch-btn" id="watch-btn">Se filmen</a>
+    </section>
+    <a class="filmasfarge" href="film.html"> Tilbake</a>
+
+    <script>
+        function showWatchButton() {
+            document.getElementById("watch-btn").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>

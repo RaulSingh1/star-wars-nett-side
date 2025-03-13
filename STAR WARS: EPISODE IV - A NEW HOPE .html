@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Film</title>
+    <link rel="stylesheet" href="film3.css">
+    <link rel="icon" href="star wars logo 8.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <section class="film-section">
+        <h1>STAR WARS: EPISODE IV - A NEW HOPE 1977</h1>
+        <img src="first star wars.jpg" alt="STAR WARS: EPISODE IV - A NEW HOPE 1977">
+        <p class="description">Opprørets siste kamp nærmer seg mens Luke Skywalker konfronterer Darth Vader og Imperiet.
+        </p>
+        <span class="price">149 NOK</span>
+        <button class="buy-btn" onclick="showWatchButton()">Kjøp filmen</button>
+        <a href="https://ww4.fmovies.co/film/star-wars-episode-v-the-empire-strikes-back-2233/" class="watch-btn" id="watch-btn">Se filmen</a>
+    </section>
+    <a class="filmasfarge" href="film.html"> Tilbake</a>
+
+
+    <script>
+        function showWatchButton() {
+            document.getElementById("watch-btn").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>
