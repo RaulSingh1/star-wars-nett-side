@@ -1,0 +1,1135 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+* {
+background-color:rgb(0, 0, 0);
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color:yellow;
+    top: 0px;
+    position: sticky;
+}
+
+.toptekst{
+    font-size: 23px;
+    color: yellow;
+    text-align: center;
+    animation: backolor 5s linear infinite alternate;
+  }
+
+.bilder2 img {
+    max-width: 99%;
+    margin: auto 0px;
+    width: 100%;
+}
+
+.bilde3 img {
+    max-width: 100%;
+    margin: auto 0px;
+
+}
+
+.skrift p{
+    color: rgba(202, 14, 14, 0.971);
+    top: 0px;
+    
+}
+
+.skriftel p{
+    color:yellow
+}
+
+.sokbar{
+    text-align: center;
+    font-size: 2rem;
+}
+.sokbar input{
+    color: beige;
+    width: 50ch;
+    margin:  auto;
+    
+}
+
+a{
+    color: red;
+    
+
+}
+
+.tittel{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+
+}
+
+.back{
+    color: red;
+    text-align: left;
+
+
+}
+
+.titteltop{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    text-align: center;
+    
+}
+
+.shopnå{
+    color: red;
+    text-align: center;
+   font-size: 20px;
+}
+
+.service{
+    color: red;
+    text-align: left;
+    
+}
+
+.customer-service {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.customer-service p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.customer-service a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.customer-service a:hover {
+    text-decoration: underline;
+}
+
+.customer-service strong {
+    color: #ffd700; 
+}
+
+.customer-service p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Stiler for hver produktboks */
+.product-box {
+    background-color: #fff;
+    width: 30%; /* Hver boks tar opp 30% av tilgjengelig bredde */
+    max-width: 350px; /* Maksimal bredde for boksene */
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+/* Stiler for bilde */
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Stiler for produktinformasjon */
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0 0 15px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Responsiv design for små skjermer */
+@media (max-width: 768px) {
+    .product-box {
+        width: 45%; /* Tar opp 45% på små skjermer */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-box {
+        width: 100%; /* Tar opp 100% på veldig små skjermer */
+    }
+}
+
+/* Grunnleggende stil for siden */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilen for menyknappen */
+.menu-button {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px; /* Plasserer den 10px fra toppen */
+    left: 10px; /* Plasserer den 10px fra venstre */
+    padding: 10px;
+    background-color: transparent; /* Ingen bakgrunnsfarge for knapp */
+    color: #fff;
+    text-align: center;
+    z-index: 2; /* Sikrer at logoen er øverst */
+}
+
+/* Skjult input som kontrollerer visningen av menyen */
+.menu-toggle {
+    display: none;
+}
+
+/* Star Wars-logoens stil */
+.star-wars-logo {
+    width: 40px; /* Sett størrelsen på logoen */
+    height: auto;
+}
+
+/* Side-menyens stil */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Lukk-knapp i venstre hjørne */
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Når menyen er aktivert, flyttes den til venstre */
+.menu-toggle:checked + .menu-container .sidebar {
+    left: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu-toggle:checked + .menu-container .overlay {
+    display: block;
+}
+
+/* Dropdown for Produkter */
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+    background-color: #666;
+}
+
+.dropdown-menu li:hover {
+    background-color: #777;
+}
+
+/* Vis dropdown når man hover over "Produkter" */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Generell stil */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: none; /* Fjerner rød strek */
+}
+
+/* Produktcontainer */
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 80px auto;
+    gap: 40px;
+}
+
+/* Større produktbilde */
+.product-image-box {
+    flex: 1;
+    max-width: 85%;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Produktinfo (gjør teksten mindre) */
+.product-info-box {
+    flex: 1;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+/* Produkttekst */
+.product-name {
+    font-size: 2em;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+    text-decoration: none; /* Fjerner eventuelle streker */
+}
+
+.product-description {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #f6f6f6;
+    margin-bottom: 10px;
+    text-decoration: none; /* Fjerner eventuelle streker */
+}
+
+.product-details {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 15px;
+    text-decoration: none; /* Fjerner eventuelle streker */
+}
+
+/* Pris og kjøpsknapp */
+.price-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none; /* Fjerner eventuelle streker */
+}
+
+/* Kjøpsknapp */
+.buy-button {
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-decoration: none; /* Fjerner eventuelle streker */
+}
+
+.buy-button:hover {
+    background-color: darkred;
+}
+
+/* Tilbake-link */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: red;
+    text-decoration: none; /* Fjerner røde streker */
+    font-size: 1.2em;
+    border-bottom: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Generell stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(45deg, #111, #222);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+/* Seksjoner */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    border-bottom: 2px solid #333;
+}
+
+section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Historie-seksjon */
+.history {
+    background-color: #111;
+}
+
+/* Visjon */
+.vision {
+    font-style: italic;
+    color: #ffcc00;
+}
+
+/* Team-seksjon */
+.team {
+    background-color: #222;
+    padding: 50px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+/* Bli med-seksjon */
+.join {
+    background: linear-gradient(45deg, #222, #444);
+    padding: 50px;
+}
+
+.join-button {
+    background-color: #ffcc00;
+    color: #222;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-button:hover {
+    background-color: #ffdd44;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 0.9em;
+    color: #777;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+
+
+/* Generell styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0f19;
+    color: white;
+}
+
+/* Sidebar-toggle */
+#menu-toggle {
+    display: none;
+}
+
+/* Sidebar-knapp */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #444;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #111, #222);
+    padding-top: 60px;
+    transition: left 0.3s;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    border-right: 3px solid #ffcc00;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    text-align: center;
+    padding: 15px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+/* Søkefelt i sidebar */
+.search-box {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+}
+
+/* Sidebar-liste */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Lukke-knapp */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Når menyen er åpen */
+#menu-toggle:checked + .menu-button + .sidebar {
+    left: 0;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+#menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero {
+    background: url(fs22.jpg) center/cover no-repeat;
+    
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffcc00;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Produkt-seksjon */
+.content {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+    
+
+
+.product-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid #ffcc00;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.product-card button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-card button:hover {
+    background: #ff9900;
+}
+
+
+/* Generell styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #10141E;
+    text-align: center;
+}
+
+/* Filmseksjon */
+.film-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.film-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.film-card:hover {
+    transform: scale(1.05);
+}
+
+.film-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Generell styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #10141E;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Topptekst */
+.top-header {
+    background: url('star-wars-banner.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Filmseksjon */
+.film-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Filmkort */
+.film-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.film-card:hover {
+    transform: scale(1.05);
+}
+
+.film-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.film-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Knapper */
+.film-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.film-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.rent { background-color: #FFA500; }
+.buy { background-color: #28A745; }
+.info { background-color: #007BFF; }
+
+.film-buttons a:hover {
+    opacity: 0.8;
+}
+
+
+/* === Import av Star Wars-font === */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* === Generell styling === */
+body {
+    background: url('bs.jpg') no-repeat center center fixed;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Header === */
+.header {
+    background: radial-gradient(circle, #ffcc00, #ff6600);
+    padding: 20px;
+    font-size: 24px;
+    text-shadow: 2px 2px 10px #000;
+    background: url('bs.jpg') no-repeat center center fixed;
+
+}
+
+/* === Butikk layout === */
+.lightsaber-shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    background: url('bs.jpg') no-repeat center center fixed;
+
+}
+
+/* === Lysabelcontainer === */
+.lightsaber-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+        background: url('bs.jpg') no-repeat center center fixed;
+
+
+}
+
+/* === Lyssabelkort === */
+.lightsaber-card {
+    background: #111;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px #ffcc00;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.lightsaber-card:hover {
+    transform: scale(1.05);
+}
+
+/* === Bilder av lyssabler === */
+.lightsaber-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ffcc00;
+}
+
+/* === Pris styling === */
+.price {
+    font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    background: url('bs.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.star-wars-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: yellow;
+    text-shadow: 0px 0px 10px gold;
+}
+
+.game-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.7);
+    background: url('bs.jpg') no-repeat center center fixed;
+
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: yellow;
+    margin: 10px 0;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+
+body {
+    background: url('bs.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.klær-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.klær-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.7);
+    background: url('epic2.jpg') no-repeat center center fixed;
+}
+
+.klær-card img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.klær-h2 {
+    color: yellow;
+    margin: 10px 0;
+}
+
+.klær-price {
+    display: block;
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.klær-buy-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.klær-buy-btn:hover {
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+.klær-footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 40px;
+}
+
